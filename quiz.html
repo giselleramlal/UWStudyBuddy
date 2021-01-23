@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Study Buddy Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+</head>
+<body background="bg_quiz.jpg">
+    <main>
+
+        <h1>Let's start matching!</h1>
+        <h2>Study Buddy Quiz</h2>
+        <form method="get" class ="quiz">
+            <div class ="quiz">
+                <label for="name"> Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required >
+            </div>
+            <div class ="quiz">
+                <label for="term"> Study Term: </label>
+                <select name="term" id="term">
+                    <option value="1A">1A</option>
+                    <option value="1A">1B</option>
+                    <option value="1A">2A</option>
+                    <option value="1A">2B</option>
+                    <option value="1A">3A</option>
+                    <option value="1A">3B</option>
+                    <option value="1A">4A</option>
+                    <option value="1A">4B</option>
+                </select>
+            </div>
+            <div class ="quiz">
+                <label for="courses"> Courses: </label>
+                <input type="button" value = "Add Row" name="button" onclick="addRow('dataTable')" id="courses">
+                <input type ="button" value="Delete Row" onclick="deleteRow('dataTable')">
+                <table id="dataTable" width = "350px" border="1">
+                    
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="chk[]"/></td>
+                            <td><input type="text" name="txt[]"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class ="quiz">
+                <label for="timezone"> Time Zone: </label>
+                <input type="text" name="timezone" id="timezone" placeholder="Enter your time zone" required >
+            </div>
+            <div class ="quiz">
+                <label for="groupsize"> Ideal Group Size: </label>
+                <select name="groupsize" id="groupsize">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <h3>Study Habits</h3>
+            <div class ="quiz">
+                <label for="TOD"> Time of Day: </label>
+                <select name="TOD" id="TOD">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </div>
+            <div class ="quiz">
+                <label for="style"> Style: </label>
+                <select name="style" id="style">
+                    <option value="Focused">Focused</option>
+                    <option value="Relaxed">Relaxed</option>
+                </select>
+            </div>
+            <div class ="quiz">
+                <label for="learn"> Learning Style: </label>
+                <select name="learn" id="learn">
+                    <option value="Visual">Visual</option>
+                    <option value="Auditory">Auditory</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best study partner service worldwide | studybuddy.com</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="addons/style.css">
+    <script src="addons/students.js"></script>
+    <script src="addons/main.js"></script>
+=======
+    <link rel="stylesheet" href="style.css">
+>>>>>>> ce68fe89af650f40a1c48941263744c579459bc1
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="studybuddy.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+        <form action="quiz.html">
+            <input type="submit" value="Take Me There!" />
+        </form>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to StudyBuddy</h1>
+        <p>Find your perfect match to study with </p>
+        <p>in just a few steps! </p>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </section>
+
+    <section class="services">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/quiz.png" alt="studybuddy.com">
+                <h2 class="h-secondary center">Personality Quiz</h2>
+                <p class="center">Take a very short quiz. You will be asked questions related to
+                    your study pattern.
+                </p>
+                
+            </div>
+            <div class="box">
+                <img src="images/study.png" alt="studybuddy.com">
+                <h2 class="h-secondary center">Find your Study Buddy!</h2>
+                <p class="center">Based on your personality quiz results, 
+                    you will be matched with your study partner!</p>
+            </div>
+            <div class="box">
+                <img src="images/video.png" alt="studybuddy.com">
+                <h2 class="h-secondary center">Study together on a video call!</h2>
+                <p class="center">Hooray! You have a study partner. Happy Studying :) </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="name">
+        
+    </div>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name"
+                    placeholder= "Enter your name">                    
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID: </label>
+                    <input type="email" name="name" id="email"
+                    placeholder= "Enter your Email ID">                    
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone"
+                    placeholder= "Enter your phone number">                    
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>   
+                    <button type="submit">Submit</button>                
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.studybuddy.com All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
