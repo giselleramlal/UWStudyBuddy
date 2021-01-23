@@ -1,0 +1,347 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height :59px;
+}
+
+/* Body */
+body {
+    background-color: #effffe;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 34px 45 px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/* Navigation Bar: List styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white; 
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black; 
+    background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    /* background: url('banner.jpg') no-repeat center center/cover;*/
+    height: 68%;
+    width: 120%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 2.9;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Registration form  */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    padding: 6px 2px;
+    border: 0.1px solid white;
+    background-color: #48a29d;
+    color: white;
+    margin: 0.1px;
+    font-size: 1.0rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #48a29d;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #48a29d;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+/* Services Center  */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid#48a29d;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: #a4ede9;
+}
+#services .box img{
+    height: 280px;
+    margin: auto;
+    display: block;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+   /* background: url('../contact.jpg') no-repeat center center/cover;*/
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* Chat Room section  */
+#chatroom{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+}
+#chatroom::before{
+    content: "";
+    position: absolute;
+    background: rgb(157, 157, 228);
+    height: 68%;
+    width: 120%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 2.9;
+}
+#chatroom h1{
+    color: black;
+    text-align: center;
+}
+
+/* Personality Quiz */
+
+input[type="submit" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    margin: 0.1px;
+    background-color: brown;
+    box-sizing: border-box;
+    padding: 6px 18px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    -ms-transform: translate(50%, 50%);
+    transform: translate(80%, 50%);
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 2px;
+    border: 0.1px solid white;
+    background-color: brown;
+    color: white;
+    margin: 0.1px;
+    font-size: 1.0rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
